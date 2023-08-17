@@ -1,0 +1,73 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Seasons</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  #container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  select {
+    padding: 10px;
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+<div id="container">
+  <h2>Select a month:</h2>
+  <select id="monthDropdown">
+    <option value="January">January</option>
+    <option value="February">February</option>
+    <option value="March">March</option>
+    <option value="April">April</option>
+    <option value="May">May</option>
+    <option value="June">June</option>
+    <option value="July">July</option>
+    <option value="August">August</option>
+    <option value="September">September</option>
+    <option value="October">October</option>
+    <option value="November">November</option>
+    <option value="December">December</option>
+  </select>
+  <h3>Weather Season:</h3>
+  <p id="seasonOutput"></p>
+</div>
+
+
+<h2>Basic Calculator</h2>
+
+<form id="calculatorForm">
+    <label for="num1">Number 1:</label>
+    <input type="number" id="num1" name="num1"><br><br>
+
+    <label for="num2">Number 2:</label>
+    <input type="number" id="num2" name="num2"><br><br>
+
+    <label for="operator">Operator:</label>
+    <select id="operator" name="operator">
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+    </select><br><br>
+
+    <input type="button" value="Calculate" onclick="calculate()">
+</form>
+
+<h2>Result:</h2>
+<p id="result">Result will be displayed here.</p>
+
+<script src="app.js"></script>
+</body>
+</html>
